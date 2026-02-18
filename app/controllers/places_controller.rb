@@ -1,6 +1,6 @@
 class PlacesController < ApplicationController
   def index
-    @places = place.all
+    @places = Place.all
     #render places/index view
   end
 
@@ -21,6 +21,6 @@ class PlacesController < ApplicationController
     @place.save
 
     #redirect user
-    redirect_to "/"
+    redirect_to "/places"
   end
 end
