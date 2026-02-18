@@ -12,9 +12,6 @@
   <p>
     <label for="occurred_on">occurred_on</label>
     <input type="date" name="occurred_on">
-
-    <label for="place_id">place_id</label>
-    <input type="text" name="place_id">
   </p>
 
   <!-- transfer state from the previous action to the next -->
@@ -22,5 +19,6 @@
     <label for="place_id">Place</label>
     <input type="text" name="place_id" value="<%= @place["id"] %>">
   </p>
+
   <button>Submit</button>
 </form>

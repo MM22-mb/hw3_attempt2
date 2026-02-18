@@ -16,7 +16,7 @@ class EntriesController < ApplicationController
     #assign user-entered form data to Entry's column
     @entry["title"] = params["title"]
     @entry["description"] = params["description"]
-    @entry["occured_on"] = params["occured_on"]
+    @entry["occurred_on"] = params["occurred_on"]
 
     # assign relationship between Entry and Place
     @entry["place_id"] = params["place_id"]
