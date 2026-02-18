@@ -5,22 +5,18 @@
 <h3>Entry</h3>
 
 <ul>
-  <% for place in @places %>
+  <% for entry in @entry %>
     <li>
-      <a href="/places/<%= place["id"] %>">
+      <a href="/entries/<%= entry["id"] %>">
         <%= entry["title"] %>
       </a>
     </li>
   <% end %>
 </ul>
 
-<p>
-  <a href="/entries/<%= entry["id"] %>">
-</p>
-
 <p><a href="/places">Back to All Places</a></p>
 
 <form action="/places/<%= @place["id"] %>" method="post">
   <input type="hidden" name="_method" value="delete">
-  <button>Delete Company</button>
+  <button>Delete Place</button>
 </form>
